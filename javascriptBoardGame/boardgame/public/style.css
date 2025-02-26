@@ -1,0 +1,36 @@
+#board-container {
+  position: relative; /* Required for absolute positioning of the token */
+  width: 640px; /* 64 squares * 10px each */
+  height: 640px;
+  border: 1px solid black;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 80px); /* 8 columns, each 80px wide */
+  grid-template-rows: repeat(8, 80px);    /* 8 rows, each 80px high */
+  width: 640px;
+  height: 640px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 1px solid lightgray;
+  box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+#token {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url('cartoon.png'); /* Replace with your cartoon image */
+  background-size: cover;
+  z-index: 1; /* Ensure the token is above the board */
+}
+
+#message {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
