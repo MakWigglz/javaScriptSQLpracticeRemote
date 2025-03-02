@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+#title {
+    text-align: center;
+    color: #0000FF; /* Blue */
+}
+
+#description {
+    text-align: center;
+    color: #2b0885; /* purple */
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#survey-form {
+    background-color: #a8d0ec; /* light blue */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #0000FF; /* Blue border */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0000FF; /* Blue */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #0000FF; /* Blue border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+fieldset {
+    border: 1px solid #0000FF; /* Blue border */
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 10 20px;
+    color: #FF0000; /* Red */
+    border-bottom: 1px solid #FF0000; /* Red border */
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFF00; /* Yellow */
+    color: #0000FF; /* Blue text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FFD700; /* Darker yellow on hover */
+}
+
+/* Additional styles for better contrast and readability */
+select,
+textarea {
+    background-color: #FFFFFF; /* White background */
+    color: #333; /* Dark text for readability */
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    color: #333; /* Dark text for readability */
+}
+
+/* Add a yellow background to every other form element for visual separation */
+#survey-form > *:nth-child(even) {
+    background-color: #FFFFD0; /* Very light yellow */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Add this at the end of your existing CSS */
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#survey-form {
+    transition: opacity 0.5s ease-in-out;
+}
+
+button[type="submit"] {
+    transition: transform 0.2s ease-in-out;
+}
