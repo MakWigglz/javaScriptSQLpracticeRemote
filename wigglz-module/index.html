@@ -3,47 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wigglz</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Wigglz Fresh Pet Food & Treats</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Wigglz</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Hero Section with Video Background -->
+    <div class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="assets/happy-pets-eating.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Wigglz Fresh Pet Food</h1>
+            <p>Premium Fresh & Freeze-Dried Pet Food Made With Love</p>
+        </div>
+    </div>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Wigglz!</h1>
-            <p>Your source for amazing things.</p>
-            <button id="myButton">Click Me!</button>
-        </section>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="assets/wigglz-logo.png" alt="Wigglz Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#products">Our Products</a>
+            <a href="#food-truck">Food Truck</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-        <section class="content">
-            <h2>Some of Our Content</h2>
-            <div class="item-container">
-              <div class="item">Item 1</div>
-              <div class="item">Item 2</div>
-              <div class="item">Item 3</div>
+    <!-- Product Showcase -->
+    <section id="products" class="product-grid">
+        <div class="product-category">
+            <h2>Fresh Dog Food</h2>
+            <div class="product-items">
+                <!-- Dynamic product cards will be inserted here -->
             </div>
-        </section>
-        <section class="content hidden" id="hiddenContent">
-          <h2>Hidden content</h2>
-        </section>
-    </main>
+        </div>
+        
+        <div class="product-category">
+            <h2>Fresh Cat Food</h2>
+            <div class="product-items">
+                <!-- Dynamic product cards will be inserted here -->
+            </div>
+        </div>
 
+        <div class="product-category">
+            <h2>Freeze-Dried Treats</h2>
+            <div class="product-items">
+                <!-- Dynamic product cards will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Truck Tracker -->
+    <section id="food-truck" class="food-truck-section">
+        <h2>Find Our Food Truck</h2>
+        <div class="truck-tracker">
+            <div id="map"></div>
+            <div class="schedule">
+                <h3>Weekly Schedule</h3>
+                <!-- Dynamic schedule content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <h2>Happy Pet Parents</h2>
+        <div class="review-carousel">
+            <!-- Dynamic review cards -->
+        </div>
+    </section>
+
+    <!-- User Feedback Form -->
+    <section class="feedback-form">
+        <h2>Tell Us What Your Pet Thinks!</h2>
+        <form id="petFeedback">
+            <input type="text" placeholder="Pet's Name">
+            <select name="petType">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <textarea placeholder="Share your experience"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Manufacturing Process -->
+    <section class="process-showcase">
+        <h2>Our Premium Manufacturing Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <img src="assets/fresh-ingredients.jpg" alt="Fresh Ingredients">
+                <h3>Fresh Ingredients</h3>
+            </div>
+            <div class="step">
+                <img src="assets/freeze-dry.jpg" alt="Freeze Drying">
+                <h3>Freeze-Dry Technology</h3>
+            </div>
+            <div class="step">
+                <img src="assets/quality-control.jpg" alt="Quality Control">
+                <h3>Quality Testing</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="social-connect">
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+            <a href="#" class="instagram">
+                <img src="assets/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="#" class="facebook">
+                <img src="assets/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="#" class="linkedin">
+                <img src="assets/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Wigglz</p>
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>About Wigglz</h3>
+                <p>Crafting premium pet food with love since 2020</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: woof@wigglz.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="newsletter-signup">
+                <h3>Stay Updated</h3>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
